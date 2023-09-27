@@ -1,0 +1,7 @@
+.vs
+EnalyzerATM/.vs
+EnalyzerATM/.vs/*
+EnalyzerATM/EnalyzerATM/bin/*
+EnalyzerATM/EnalyzerATM/bin/
+EnalyzerATM/EnalyzerATM/obj/
+EnalyzerATM/EnalyzerATM/obj/*

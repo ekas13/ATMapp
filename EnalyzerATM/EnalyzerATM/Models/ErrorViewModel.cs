@@ -1,4 +1,4 @@
-namespace EnalyzerATM.Models
+﻿namespace EnalyzerATM.Models
 {
     public class ErrorViewModel
     {
