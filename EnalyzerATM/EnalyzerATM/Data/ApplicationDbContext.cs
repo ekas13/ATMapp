@@ -1,10 +1,8 @@
-﻿namespace ATMapp.Data
-{
-    using Microsoft.EntityFrameworkCore;
-    using System.Collections.Generic;
-    using System.Drawing;
-    using System.Transactions;
+﻿using EnalyzerATM.Models;
+using Microsoft.EntityFrameworkCore;
 
+namespace EnalyzerATM.Data
+{
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
@@ -17,6 +15,10 @@
             options.UseSqlite("Data Source=..\\ATM.db;");
         }
 
+        public DbSet<Accounts> Accounts { get; set; }
+        public DbSet<Coins> Coins { get; set; }
+        public DbSet<Notes> Notes { get; set; }
+        public DbSet<Transactions> Transactions { get; set; }
 
     }
 
