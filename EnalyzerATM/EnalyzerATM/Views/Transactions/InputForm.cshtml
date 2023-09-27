@@ -1,0 +1,42 @@
+﻿@model int?
+
+
+
+<div class="numpad-container">
+    <form method="post" action="/Transactions/Deposit" id="numpadForm">
+        <div class="deposit-header-title">Select amount</div>
+        <div class="input-display">
+            <label for="inputValue" class="input-label">&pound;</label>
+            <input type="text" id="inputValue" name="inputValue" value="@Model" readonly />
+            <input type="hidden" id="hiddenInput" name="amount" value="" />
+        </div>
+        <div class="numpad">
+            <div class="numpad-row">
+                <button type="button" onclick="handleButtonClick('1')">1</button>
+                <button type="button" onclick="handleButtonClick('4')">4</button>
+                <button type="button" onclick="handleButtonClick('7')">7</button>
+            </div>
+            <div class="numpad-row">
+                <button type="button" onclick="handleButtonClick('2')">2</button>
+                <button type="button" onclick="handleButtonClick('5')">5</button>
+                <button type="button" onclick="handleButtonClick('8')">8</button>
+            </div>
+            <div class="numpad-row">
+                <button type="button" onclick="handleButtonClick('3')">3</button>
+                <button type="button" onclick="handleButtonClick('6')">6</button>
+                <button type="button" onclick="handleButtonClick('9')">9</button>
+            </div>
+            <div class="numpad-row">
+                <button type="button" class="backspace" onclick="handleBackspaceClick()">
+                    <img src="~/images/back-arrow-icon.png" alt="Back">
+                </button>
+            </div>
+            <div class="numpad-row">
+                <button type="button" onclick="handleButtonClick('0')">0</button>
+            </div>
+        </div>
+        <div class="submit-button">
+            <button type="button" id="submitButton" onclick="handleSubmit()" disabled>submit</button>
+        </div>
+    </form>
+</div>

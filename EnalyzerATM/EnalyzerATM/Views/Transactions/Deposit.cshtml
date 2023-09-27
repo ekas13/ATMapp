@@ -1,0 +1,72 @@
+﻿@model EnalyzerATM.Services.ATMDeposit
+
+
+    <div class="left-container">
+        <div class = "return-button">
+            <a href="@Url.Action("InputForm", "Transactions")" class="backspace" style="text-decoration: none; border: none;">
+                <img src="~/images/back-arrow-icon.png" alt="Image Alt Text" style="border: none;">
+            </a>
+        </div>
+    </div>
+    <div class="middle-container">Depositing</div>
+
+<div class="deposit-title"><p>&pound; @Model.getCurrentAmount()<p></div>
+<div class="deposit-container">
+    @if (Model.getNotes() != null)
+    {
+        <div class="column">
+            <table>
+                <tbody>
+                    @foreach (var item in Model.getNotes())
+                    {
+                        <tr>
+                            <td><img src="~/images/500-bill.png" alt="Bill"></td>
+                            <td> @item.Value x @item.Key</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+
+    @if (Model.getBigCoins() != null)
+    {
+        <div class="column">
+            <table>
+                <tbody>
+                    @foreach (var item in Model.getBigCoins())
+                    {
+                        <tr>
+                            <td><img src="~/images/500-bill.png" alt="Bill"></td>
+                            <td> @item.Value x @item.Key</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+
+    @if (Model.getSmallCoins() != null)
+    {
+        <div class="column">
+            <table>
+                <tbody>
+                    @foreach (var item in Model.getSmallCoins())
+                    {
+                        <tr>
+                            <td><img src="~/images/500-bill.png" alt="Bill"></td>
+                           <td> @item.Value x @item.Key</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+<div class="deposit-end-title"><p>Thank you for using <br>Enalyzer ATM</p></div>
+
+
+
+
+
+
