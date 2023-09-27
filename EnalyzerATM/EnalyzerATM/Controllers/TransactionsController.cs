@@ -25,9 +25,10 @@ namespace EnalyzerATM.Controllers
 
             TransactionCalculator calculator = new TransactionCalculator(_context);
             ATMDeposit atmDeposit = calculator.call(amount);
+            TransactionLog log = new TransactionLog(_context);
+            log.call(atmDeposit);
 
             return View(atmDeposit);
-            //return View(amount);
         }
 
     }
