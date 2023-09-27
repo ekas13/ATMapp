@@ -1,8 +1,7 @@
-﻿using EnalyzerATM.Models;
-using Microsoft.EntityFrameworkCore;
-
-namespace EnalyzerATM.Data
+﻿namespace EnalyzerATM.Data
 {
+    using EnalyzerATM.Models;
+    using Microsoft.EntityFrameworkCore;
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
