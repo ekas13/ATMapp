@@ -5,12 +5,32 @@
       "PackagePath": "staticwebassets\\EnalyzerATM.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\evaka\\projects\\enalyzer\\ATMapp\\EnalyzerATM\\EnalyzerATM\\wwwroot\\css\\Deposit.css",
+      "PackagePath": "staticwebassets\\css\\Deposit.css"
+    },
+    {
+      "Id": "C:\\Users\\evaka\\projects\\enalyzer\\ATMapp\\EnalyzerATM\\EnalyzerATM\\wwwroot\\css\\InputForm.css",
+      "PackagePath": "staticwebassets\\css\\InputForm.css"
+    },
+    {
       "Id": "C:\\Users\\evaka\\projects\\enalyzer\\ATMapp\\EnalyzerATM\\EnalyzerATM\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\evaka\\projects\\enalyzer\\ATMapp\\EnalyzerATM\\EnalyzerATM\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\evaka\\projects\\enalyzer\\ATMapp\\EnalyzerATM\\EnalyzerATM\\wwwroot\\images\\500-bill.png",
+      "PackagePath": "staticwebassets\\images\\500-bill.png"
+    },
+    {
+      "Id": "C:\\Users\\evaka\\projects\\enalyzer\\ATMapp\\EnalyzerATM\\EnalyzerATM\\wwwroot\\images\\back-arrow-icon.png",
+      "PackagePath": "staticwebassets\\images\\back-arrow-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\evaka\\projects\\enalyzer\\ATMapp\\EnalyzerATM\\EnalyzerATM\\wwwroot\\js\\InputForm.js",
+      "PackagePath": "staticwebassets\\js\\InputForm.js"
     },
     {
       "Id": "C:\\Users\\evaka\\projects\\enalyzer\\ATMapp\\EnalyzerATM\\EnalyzerATM\\wwwroot\\js\\site.js",
